@@ -9,8 +9,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('grudges', { path: '/' }, function() {
     this.route('grudge', { path: ':grudge_id' });
-    this.route('edit', { path: ':grudge_id/edit' });
     this.route('new');
+    this.route('edit');
   });
 });
 
