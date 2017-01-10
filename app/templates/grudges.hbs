@@ -1,14 +1,19 @@
-<section>
-  {{#each model as |grudge|}}
-    <article>
-      {{#link-to 'grudges.grudge' grudge class='spec-grudge-item'}}
-        {{grudge.name}}
-      {{/link-to}}
-    </article>
-  {{/each}}
-  <p>Number of People : {{model.length}}</p>
-</section>
-{{#link-to 'grudges.new' class='spec-add-new-grudge' tagName='button'}}
-  Add new grudge
-{{/link-to}}
-{{outlet}}
+<div class='grudges-aside'>
+  <section class='grudges'>
+    {{#each model as |grudge|}}
+      <article class='single-grudge'>
+        {{#link-to 'grudges.grudge' grudge class='spec-grudge-item grudges-titles'}}
+          {{grudge.name}}
+        {{/link-to}}
+      </article>
+    {{/each}}
+  </section>
+  <p class='grudge-length'>Number of People : {{model.length}}</p>
+  {{#link-to 'grudges.new' class='spec-add-new-grudge add-grudge-button' tagName='button'}}
+    Add new grudge
+  {{/link-to}}
+</div>
+
+<div class='content-body'>
+  {{outlet}}
+</div>

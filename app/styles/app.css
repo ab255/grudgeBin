@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.grudge-title {
+  margin: 0;
+  padding: 20px;
+  height: 50px;
+
+  background-color: #0077C0;
+  color: #FFFFFF;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.grudges-aside {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.grudges {
+  flex: 5;
+  height: 76vh;
+  overflow-y: scroll;
+}
+
+.single-grudge {
+  height: 32px;
+  padding: 1em;
+  border-bottom: 2px solid #FAFAFA;
+  background-color: #C7EEFF;
+}
+
+a {
+  color: #1D242B;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.grudge-length {
+  margin: 5px;
+}
+
+.add-grudge-button {
+  height: 50px;
+  width: 350px;
+  border: none;
+  z-index: 1;
+
+  background-color: #0077C0;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.grudge {
+  padding: 1em;
+  flex: 1;
+  width: 60%;
+  height:77%;
+}
+
+.grudge-name {
+  margin-bottom: 15px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.grudge-wrongs, .grudge-forgiven {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.grudge button {
+  margin-top: 20px;
+}
