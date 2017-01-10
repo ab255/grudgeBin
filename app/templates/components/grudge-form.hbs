@@ -1,16 +1,16 @@
-<form>
-  <label>
+<form class='form'>
+  <label class='name-label'>
     Person:
-    {{input class='spec-name-input' value=grudge.name}}
+    {{input class='spec-name-input name-input' value=grudge.name}}
   </label>
-  <label>
+  <label class='name-label'>
     Wrongs:
-    {{textarea class='spec-wrongs-input' value=grudge.wrongs}}
+    {{textarea class='spec-wrongs-input wrongs-input' value=grudge.wrongs}}
   </label>
-  <label>
+  <label class='name-label'>
     Forgiven:
-    {{input type='checkbox' class='spec-forgiven-input' checked=grudge.forgiven}}
+    {{input type='checkbox' class='spec-forgiven-input forgiven-input' checked=grudge.forgiven}}
   </label>
-  <button type="submit" class="spec-submit-grudge">Submit</button>
+  <button type="submit" class="spec-submit-grudge submit-grudge">Submit</button>
   {{yeild}}
 </form>
