@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('grudges', { path: '/' }, function() {
     this.route('grudge', { path: ':grudge_id' });
     this.route('new');
-    this.route('edit');
+    this.route('edit', { path:':grudge_id/edit' });
   });
 });
 

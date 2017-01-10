@@ -1,1 +1,13 @@
+{{#grudge-form
+  class='spec-edit'
+  grudge=model
+  submit=(action 'editGrudge' model)
+}}
+{{/grudge-form}}
+<button
+class='spec-revert-button'
+{{action 'revertGrudge' model on='click'}}
+hidden={{unless model.hasDirtyAttributes 'true'}}
+>Revert</button>
+
 {{outlet}}
