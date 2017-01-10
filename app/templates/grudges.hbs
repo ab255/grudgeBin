@@ -1,11 +1,12 @@
 <section>
-  {{#each model as |grudge|}}
+  {{#each model.grudges as |grudge|}}
     <article>
       {{#link-to 'grudges.grudge' grudge class='spec-grudge-item'}}
         {{grudge.name}}
       {{/link-to}}
     </article>
   {{/each}}
+  <p>Number of People : {{model.grudges.length}}</p>
 </section>
 {{#link-to 'grudges.new' class='spec-add-new-grudge' tagName='button'}}
   Add new grudge
