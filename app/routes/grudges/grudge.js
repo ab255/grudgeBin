@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.get('store').find('grudge', params.reminder_id);
+    return this.get('store').find('grudge', params.grudge_id);
   }
 });
