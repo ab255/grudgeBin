@@ -1,7 +1,9 @@
 <section>
   {{#each model as |grudge|}}
     <article>
-      {{grudge.name}}
+      {{#link-to 'grudges.grudge' grudge class='spec-grudge-item'}}
+        {{grudge.name}}
+      {{/link-to}}
     </article>
   {{/each}}
 </section>
