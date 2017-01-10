@@ -5,8 +5,8 @@ export default Ember.Controller.extend({
     createGrudge: function(grudgeForm) {
       let grudgeProps = grudgeForm.getProperties('name', 'wrongs', 'forgiven');
       let record = this.get('store').createRecord('grudge', grudgeProps);
-      record.save().then((grudge) => {
-          this.transitionToRoute('grudges.grudge', grudge);
+      record.save().then(() => {
+          this.transitionToRoute('grudges');
       });
       return false;
     }
