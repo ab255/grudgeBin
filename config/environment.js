@@ -40,9 +40,13 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
   }
+  ENV.remote_couch = 'https://ab255.cloudant.com/grudges';
+  ENV.local_couch = 'grudges';
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/';
+    ENV.remote_couch = 'https://ab255.cloudant.com/grudges';
+    ENV.local_couch = 'grudges';
   }
 
   return ENV;
