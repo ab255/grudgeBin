@@ -11,14 +11,10 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "postinstall": "bower install",
-    "start": "ember serve --port=${PORT}",
+    "start": "ember server",
     "test": "ember test"
   },
   "devDependencies": {
-    "ember-cli": "2.8.0"
-  },
-  "dependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",
     "ember-cli": "2.8.0",
